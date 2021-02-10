@@ -1,0 +1,18 @@
+class Customer:
+    def __init__(self,name,age,address):
+        self.name=name
+        self.age=age
+        self.address=address
+
+    def print_detail(self):
+        print("The city is",self.address.city_name)
+
+class Address:
+    def __init__(self,pin,city,state):
+        self.pin_code=pin
+        self.city_name=city
+        self.state_name=state
+
+add1=Address(844101,"Hajipur","Bihar")
+cust1=Customer("Avanish",21,add1)
+cust1.print_detail()
